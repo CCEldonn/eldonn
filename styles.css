@@ -1,9 +1,111 @@
-// Script para hacer scroll suave entre secciones
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #003366, #001f4d);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #003366;
+  color: white;
+}
+
+button, .btn {
+  background-color: #003366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #002244;
+}
