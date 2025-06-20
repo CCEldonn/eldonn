@@ -1,22 +1,135 @@
-/* Header */
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #d62828; /* Rojo oscuro */
-  color: black; /* Letras negras */
-  padding: 1rem 2rem;
+  background: #000;
+  color: #fff;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
+}
+header h1 {
+  display: inline-block;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  float: right;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Sala Jorge Donn */
-.sala-jorge-donn {
+/* HERO */
+.hero {
+  background: #f4f4f4;
+  padding: 80px 0;
   text-align: center;
-  margin-top: 1rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
-.sala-jorge-donn h2 {
-  color: black; /* Letras negras */
+/* SECCIONES */
+.seccion {
+  padding: 60px 0;
+}
+.seccion.light {
+  background: #f9f9f9;
+}
+.seccion h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* FLEXBOX PARA JORGE DONN */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+.texto {
+  flex: 2;
+}
+.video {
+  flex: 3;
+}
+
+/* GALERÍA */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* FORMULARIO */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+footer a {
+  color: #fff;
+  margin-left: 10px;
 }
