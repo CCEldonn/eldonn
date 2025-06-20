@@ -1,14 +1,22 @@
-a[href^="https://wa.me"]  {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: #25d366;
-  color: white !important;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s ease;
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d62828; /* Rojo oscuro */
+  color: black; /* Letras negras */
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-a[href^="https://wa.me"]:hover  {
-  background-color: #128c7e;
+/* Sala Jorge Donn */
+.sala-jorge-donn {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.sala-jorge-donn h2 {
+  color: black; /* Letras negras */
 }
