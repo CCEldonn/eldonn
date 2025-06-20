@@ -1,72 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Donn - Centro Cultural</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Donn - Arte y Cultura</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Logo El Donn" style="max-width: 200px; margin-bottom: 1rem;">
+  <!-- HEADER -->
+  <header id="inicio">
+    <div class="container">
       <h1>El Donn</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-        <li><a href="#actividades">Actividades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <div class="sala-jorge-donn">
-      <h2>Sala Jorge Donn</h2>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li> 
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#jorge-donn">Jorge Donn</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section id="inicio" class="hero">
-    <h2>Bienvenido a El Donn</h2>
-    <p>Un homenaje a Jorge Donn y un espacio cultural en el corazón de Palermo.</p>
-  </section>
-
-  <section id="galeria">
-    <h2>Galería de Fotos</h2>
-    <div class="gallery">
-      <img src="images/sala.png" alt="Foto del Espacio Cultural">
-      <!-- Puedes agregar más imágenes aquí -->
+  <!-- SECCIÓN INICIO -->
+  <section class="hero">
+    <div class="container">
+      <h2>Proyecto Cultural dedicado al legado de Jorge Donn</h2>
+      <p>Clases, talleres y eventos culturales abiertos al público.</p>
+      <a href="#contacto" class="btn">Inscríbete o contáctanos</a>
     </div>
   </section>
 
-  <section id="sobre-nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>El Donn es un espacio cultural ubicado en Palermo dedicado a la promoción del arte y la danza, en homenaje a Jorge Donn. Ofrecemos clases de teatro, tango, danza contemporánea y mucho más.</p>
+  <!-- ACTIVIDADES -->
+  <section id="actividades" class="seccion">
+    <div class="container">
+      <h2>Nuestras Actividades</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="img/actividades/actividad1.jpg" alt="Taller de danza">
+          <h3>Taller de Danza Contemporánea</h3>
+          <p>Sábado 15 de noviembre | 10:00 am</p>
+        </div>
+        <div class="card">
+          <img src="img/actividades/actividad2.jpg" alt="Conversatorio">
+          <h3>Conversatorio: El arte de enseñar</h3>
+          <p>Jueves 20 de noviembre | 6:00 pm</p>
+        </div>
+        <div class="card">
+          <img src="img/actividades/actividad3.jpg" alt="Exhibición">
+          <h3>Exhibición de alumnos</h3>
+          <p>Domingo 30 de noviembre | 4:00 pm</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="actividades">
-    <h2>Nuestras Actividades</h2>
-    <ul>
-      <li>Clases de Teatro</li>
-      <li>Clases de Tango</li>
-      <li>Danza Contemporánea</li>
-      <li>Coro</li>
-      <li>Muestra Permanente sobre Jorge Donn</li>
-      <li>Presentaciones audiovisuales mensuales</li>
-    </ul>
+  <!-- JORGE DONN -->
+  <section id="jorge-donn" class="seccion light">
+    <div class="container">
+      <h2>Jorge Donn</h2>
+      <div class="flex">
+        <div class="texto">
+          <p>Jorge Donn fue un bailarín chileno-internacional que destacó como solista del Ballet de París y luego del Royal Ballet de Londres. Su legado inspira este proyecto cultural dedicado a la educación artística y la difusión del arte contemporáneo.</p>
+          <p>A través de esta iniciativa, queremos mantener vivo su espíritu docente y su amor por el arte accesible a todos.</p>
+        </div>
+        <div class="video">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/TU-ID"  title="Video sobre Jorge Donn" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Email: <a href="mailto:cceldonn@gmail.com">cceldonn@gmail.com</a></p>
-    <p>Teléfono: <a href="https://wa.me/541149481103"  target="_blank">+54 11 4948 1103 (WhatsApp)</a></p>
-    <p>Redes Sociales: <a href="https://taplink.cc/eldonn"  target="_blank">Visita nuestras redes</a></p>
+  <!-- GALERÍA -->
+  <section id="galeria" class="seccion">
+    <div class="container">
+      <h2>Galería de Fotos</h2>
+      <div class="gallery">
+        <img src="img/galeria/galeria1.jpg" alt="Evento 1">
+        <img src="img/galeria/galeria2.jpg" alt="Evento 2">
+        <img src="img/galeria/galeria3.jpg" alt="Evento 3">
+        <img src="img/galeria/galeria4.jpg" alt="Evento 4">
+        <img src="img/galeria/galeria5.jpg" alt="Evento 5">
+        <img src="img/galeria/galeria6.jpg" alt="Evento 6">
+      </div>
+    </div>
   </section>
 
+  <!-- CONTACTO -->
+  <section id="contacto" class="seccion light">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/YOUR-FORM-ID"  method="POST">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 El Donn - Todos los derechos reservados</p>
+    <div class="container">
+      <p>&copy; 2025 El Donn. Todos los derechos reservados.</p>
+      <p>Síguenos en <a href="#">Instagram</a> | <a href="#">YouTube</a></p>
+    </div>
   </footer>
 
-  <script src="scripts.js"></script>
 </body>
 </html>
