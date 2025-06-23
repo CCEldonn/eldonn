@@ -10,16 +10,14 @@
 <body>
 
   <!-- HEADER -->
-  <header id="inicio">
+  <header>
     <div class="container">
-      <h1>El Donn 🏛️🩰</h1>
+      <a href="#inicio" class="logo"><img src="img/logo-el-donn.png" alt="Logo El Donn"></a> 
       <nav>
         <ul>
-          <li><a href="#sobre">Sobre Nosotros</a></li> 
-          <li><a href="#clases">Clases</a></li>
+          <li><a href="#sobre">Sobre Nosotros</a></li>
           <li><a href="#galeria">Galería</a></li>
           <li><a href="#eventos">Eventos</a></li>
-          <li><a href="#espacio">Espacio</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
@@ -27,59 +25,116 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="overlay"></div>
     <div class="container">
       <h2>Centro Cultural Jorge Donn</h2>
-      <p>Gestionado por su hermana melliza Delia Donn y su hijo Héctor Marciano</p>
+      <p>Gestionado por su hermana melliza Delia Donn y su hijo Héctor Rodríguez</p>
       <a href="https://wa.me/541149481103"  target="_blank" class="btn">Contáctanos por WhatsApp</a>
     </div>
   </section>
 
-<!-- SOBRE NOSOTROS -->
-<section id="sobre" class="seccion">
-  <div class="container">
-    <h2>Sobre El Donn</h2>
-    <div class="flex">
-      <div class="texto">
-        <p>"Celebramos su vida y arte"</p>
-        <p>El proyecto cultural nace como homenaje a la vida y obra de <strong>Jorge Donn</strong>, bailarín argentino-internacional .</p>
-        <p>Ubicado en el corazón de Palermo, este espacio busca ser un punto de encuentro artístico para la comunidad local e internacional. Ofrecemos talleres, presentaciones audiovisuales mensuales, y un lugar para la creación cultural independiente.</p>
-        <p>Nuestro objetivo es promover el teatro independiente,danza y otras expresiones artísticas.</p>
-      </div>
-      <div class="img">
-        <img src="img/jorge-donn/foto1.jpg" alt="Jorge Donn">
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- CLASES Y TALLERES -->
-  <section id="clases" class="seccion light">
+  <!-- SOBRE NOSOTROS -->
+  <section id="sobre" class="seccion">
     <div class="container">
-      <h2>Clases y Talleres</h2>
-      <div class="cards">
-        <div class="card"><h3>Teatro</h3></div>
-        <div class="card"><h3>Tango</h3></div>
-        <div class="card"><h3>West Coast</h3></div>
-        <div class="card"><h3>Danza Contemporánea</h3></div>
-        <div class="card"><h3>Coro</h3></div>
-        <div class="card"><h3>Salsa & Bachata</h3></div>
+      <h2>Sobre El Donn</h2>
+      <div class="flex">
+        <div class="texto">
+          <p>"Celebramos su vida y arte"</p>
+          <p>El proyecto cultural nace como homenaje a la vida y obra de <strong>Jorge Donn</strong>, bailarín argentino-internacional y figura clave en el ballet contemporáneo.</p>
+          <p>Ubicado en el corazón de Palermo, este espacio busca ser un punto de encuentro artístico para la comunidad local e internacional. Ofrecemos talleres, presentaciones audiovisuales mensuales, y un lugar para la creación cultural independiente.</p>
+          <p>Nuestro objetivo es promover el teatro independiente, la danza y otras expresiones artísticas con identidad barrial y latinoamericana.</p>
+        </div>
+        <div class="img">
+          <img src="img/jorge-donn/foto1.jpg" alt="Jorge Donn">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- GALERÍA DE JORGE DONN -->
-  <section id="galeria" class="seccion">
+  <!-- GALERÍA -->
+  <section id="galeria" class="seccion light">
     <div class="container">
-      <h2>Muestra Permanente sobre Jorge Donn</h2>
+      <h2>Galería de Fotos</h2>
       <div class="gallery">
-        <img src="img/galeria/galeria1.jpg" alt="Foto 1">
-        <img src="img/galeria/galeria2.jpg" alt="Foto 2">
-        <img src="img/galeria/galeria3.jpg" alt="Foto 3">
-        <img src="img/galeria/galeria4.jpg" alt="Foto 4">
-        <img src="img/galeria/galeria5.jpg" alt="Foto 5">
-        <img src="img/galeria/galeria6.jpg" alt="Foto 6">
+        <img src="img/galeria/evento-teatro.jpg" alt="Teatro">
+        <img src="img/galeria/tango-clase.jpg" alt="Tango">
+        <img src="img/galeria/danza-contemporanea-grupal.jpg" alt="Danza">
+        <img src="img/galeria/coro-evento.jpg" alt="Coro">
+        <img src="img/galeria/exposicion-jorge-donn1.jpg" alt="Exposición">
+        <img src="img/galeria/sala-vacia1.jpg" alt="Sala vacía">
       </div>
-      <div style="text-align:center; margin-top: 20px;">
-        <iframe width="100%" height="315" src="
+    </div>
+  </section>
+
+  <!-- EVENTOS -->
+  <section id="eventos" class="seccion">
+    <div class="container">
+      <h2>Próximos Eventos</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="img/galeria/evento-teatro.jpg" alt="Obra de Teatro">
+          <h3>Obra de Teatro: "El Fantasma de Canterville"</h3>
+          <p><strong>Fecha:</strong> Sábado 15 de noviembre</p>
+          <p><strong>Hora:</strong> 20:00 hs</p>
+        </div>
+        <div class="card">
+          <img src="img/galeria/tango-clase.jpg" alt="Clase de Tango">
+          <h3>Taller Intensivo de Tango</h3>
+          <p><strong>Fecha:</strong> Jueves 20 de noviembre</p>
+          <p><strong>Hora:</strong> 18:00 hs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section id="mapa" class="seccion light">
+    <div class="container">
+      <h2>¿Dónde nos encontramos?</h2>
+      <p>📍 Güemes 3825, Palermo, Buenos Aires</p>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1f3284.786074754627!2f-58.43376488433421!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c1ab3e8169%3A0xf0f5f2d6f6f3b3f5!2sG%C3%BCemes+3825%2C+CABA!5e0!3m2!1ses!2sar!4v1612345678901!5m2!1ses!2sar"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="seccion light">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p><strong>Dirección:</strong> Güemes 3825, Palermo, Buenos Aires</p>
+      <p><strong>WhatsApp:</strong> +54 11 4948-1103</p>
+      <p><strong>Redes:</strong> <a href="https://taplink.cc/eldonn" target="_blank">Instagram | YouTube | Facebook</a></p>
+
+      <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 El Donn. Todos los derechos reservados.</p>
+      <p><a href="https://taplink.cc/eldonn" target="_blank">Instagram | YouTube | Facebook</a></p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/541149481103" target="_blank" class="whatsapp-button">
+    <img src="img/whatsapp.png" alt="WhatsApp">
+  </a>
+
+</body>
+</html>
