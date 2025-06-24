@@ -173,3 +173,26 @@ footer a {
   width: 50px;
   height: 50px;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.gallery-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
