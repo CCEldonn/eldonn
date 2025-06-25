@@ -267,3 +267,17 @@ footer a {
 .card-taller:last-child {
   margin-bottom: 0;
 }
+/* === MEJORAS ADICIONALES PARA LAS PÁGINAS DE CURSOS === */
+
+.card-taller:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.card-taller:nth-child(even) .info {
+  text-align: right;
+}
+
+.card-taller:nth-child(even) h3 {
+  color: #4682B4;
+}
