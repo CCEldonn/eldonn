@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Taller de Teatro - El Donn</title>
-  <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teatro - El Donn</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -13,45 +15,4 @@
       <a href="../index.html" class="logo"><img src="../logo-el-donn.png" alt="Logo El Donn"></a>
       <nav>
         <ul>
-          <li><a href="../#sobre">Sobre Nosotros</a></li>
-          <li><a href="../#talleres">Talleres</a></li>
-          <li><a href="../#galeria">Galería</a></li>
-          <li><a href="../#exposicion">Exposición</a></li>
-          <li><a href="../#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="container">
-      <h2>Taller de Teatro</h2>
-      <p>Clases semanales para niños y adultos. Enfoque en teatro independiente y local.</p>
-    </div>
-  </section>
-
-  <!-- CONTENIDO -->
-  <section class="seccion light">
-    <div class="container">
-      <h3>Descripción del Taller</h3>
-      <p>Ofrecemos talleres semanales de teatro dirigidos por artistas locales e internacionales...</p>
-
-      <h3>Fotos del Taller</h3>
-      <div class="gallery">
-        <img src="../galeria/evento-teatro.jpg" alt="Taller de teatro">
-        <img src="../galeria/evento-teatro.jpg" alt="Taller de teatro 2">
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 El Donn. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+          <li>
