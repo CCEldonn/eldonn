@@ -241,3 +241,52 @@ footer a {
 .card-taller:last-child {
   margin-bottom: 0;
 }
+/* === TALLERES DE TEATRO === */
+.seccion.talleres {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.card-taller {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.card-taller:hover {
+  transform: translateY(-5px);
+}
+
+.card-taller img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card-taller img:hover {
+  transform: scale(1.02);
+}
+
+.card-taller .info {
+  flex: 1;
+  min-width: 300px;
+}
+.card-taller h3 {
+  font-size: 1.6rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+.card-taller p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
