@@ -98,7 +98,7 @@ nav a:hover {
 }
 
 /* FLEXBOX PARA SECCIÓN SOBRE NOSOTROS */
-.flex {
+.flex, .flexbox {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -117,7 +117,7 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* TARJETAS DE TALLERES */
+/* TARJETAS DE TALLERES (en index.html) */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -146,12 +146,13 @@ nav a:hover {
   border-radius: 4px;
   font-size: 0.9rem;
   display: inline-block;
+  transition: background 0.3s;
 }
 .btn-mini:hover {
   background: #0056b3;
 }
 
-/* GALLERY */
+/* GALERÍA */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -168,7 +169,7 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* CONTENEDOR DEL MAPA */
+/* MAPA */
 .map-container {
   margin-top: 20px;
   border-radius: 8px;
@@ -194,7 +195,7 @@ footer a {
   text-decoration: underline;
 }
 
-/* BOTÓN WHATSAPP FLOTANTE */
+/* WHATSAPP FLOTANTE */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -213,34 +214,7 @@ footer a {
   width: 50px;
   height: 50px;
 }
-/* ESTILO PARA LOS TALLERES */
-.card-taller {
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.card-taller h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #007BFF;
-}
-.card-taller img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-.card-taller p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #555;
-}
-.card-taller:last-child {
-  margin-bottom: 0;
-}
+
 /* === TALLERES DE TEATRO === */
 .seccion.talleres {
   background-color: #fff;
@@ -287,6 +261,9 @@ footer a {
 }
 .card-taller p {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #444;
+}
+.card-taller:last-child {
+  margin-bottom: 0;
 }
