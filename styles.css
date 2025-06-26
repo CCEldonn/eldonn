@@ -169,7 +169,6 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* MAPA */
 /* CONTENEDOR DEL MAPA */
 .map-container {
   margin-top: 20px;
@@ -181,7 +180,6 @@ nav a:hover {
   width: 100%;
   height: 450px;
   border: none;
-}
 }
 
 /* FOOTER */
@@ -269,23 +267,21 @@ footer a {
 .card-taller:last-child {
   margin-bottom: 0;
 }
-/* === MEJORAS ADICIONALES PARA LAS PÁGINAS DE CURSOS === */
 
+/* === MEJORAS ADICIONALES === */
 .card-taller:nth-child(even) {
   flex-direction: row-reverse;
   text-align: right;
 }
-
 .card-taller:nth-child(even) .info {
   text-align: right;
 }
-
 .card-taller:nth-child(even) h3 {
   color: #4682B4;
 }
+
 /* === CARRUSEL SWIPER === */
 .swiper-container {
-  width: 100%;
   max-width: 900px;
   margin: auto;
   border-radius: 10px;
