@@ -312,3 +312,38 @@ footer a {
   margin-top: 10px;
   text-align: center;
 }
+/* === EVENTOS MENSUALES === */
+.eventos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.evento {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.evento:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.evento-fecha {
+  font-weight: bold;
+  color: #007BFF;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.evento-titulo {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  display: block;
+}
+.evento-descripcion {
+  font-size: 0.95rem;
+  color: #555;
+}
