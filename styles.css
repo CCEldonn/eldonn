@@ -283,3 +283,36 @@ footer a {
 .card-taller:nth-child(even) h3 {
   color: #4682B4;
 }
+/* === CARRUSEL SWIPER === */
+.swiper-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  padding: 10px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.swiper-pagination-bullet {
+  background: #007BFF !important;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
