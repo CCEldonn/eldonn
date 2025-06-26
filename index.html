@@ -156,6 +156,29 @@
   <a href="https://wa.me/541149481103" target="_blank" class="whatsapp-button">
     <img src="whatsapp.png" alt="WhatsApp">
   </a>
-
+<!-- INICIALIZAR SWIPER -->
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      960: { slidesPerView: 3 }
+    }
+  });
+</script>
 </body>
 </html>
