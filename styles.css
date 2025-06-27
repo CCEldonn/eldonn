@@ -394,3 +394,47 @@ footer a {
   margin-top: 10px;
   text-align: center;
 }
+/* styles.css */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.seccion {
+  padding: 3rem 0;
+}
+
+.bio-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.bio-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.redes-sociales a img {
+  width: 32px;
+  margin: 0 10px;
+}
