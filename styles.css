@@ -98,7 +98,8 @@ nav a:hover {
 }
 
 /* FLEXBOX PARA SECCIÓN SOBRE NOSOTROS */
-.flex, .flexbox {
+.flex,
+.flexbox {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -114,7 +115,7 @@ nav a:hover {
   width: 100%;
   max-width: 300px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* TARJETAS DE TALLERES (en index.html) */
@@ -126,7 +127,7 @@ nav a:hover {
 .card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 20px;
   text-align: center;
 }
@@ -169,7 +170,7 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* CONTENEDOR DEL MAPA */
+/* MAPA */
 .map-container {
   margin-top: 20px;
   border-radius: 8px;
@@ -280,45 +281,12 @@ footer a {
   color: #4682B4;
 }
 
-/* === CARRUSEL SWIPER === */
-.swiper-container {
-  max-width: 900px;
-  margin: auto;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-.swiper-slide {
-  text-align: center;
-  background: #fff;
-  padding: 10px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.swiper-pagination-bullet {
-  background: #007BFF !important;
-}
-
-.caption {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 10px;
-  text-align: center;
-}
 /* === EVENTOS MENSUALES === */
 .eventos-lista {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
 .evento {
   background: #fff;
   border-radius: 8px;
@@ -343,8 +311,86 @@ footer a {
   margin-bottom: 10px;
   display: block;
 }
+.evento-titulo:hover {
+  text-decoration: underline;
+}
 .evento-descripcion {
   font-size: 0.95rem;
   color: #555;
 }
-styles.css
+
+/* === BIOGRAFÍA CON FOTO AL COSTADO === */
+.bio-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.bio-image {
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.bio-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.bio-text {
+  flex: 1;
+}
+
+/* === HOMENAJES Y PAÍSES === */
+.listado-homenajes {
+  padding-left: 20px;
+}
+.listado-homenajes li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.listado-paises {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 0;
+}
+.listado-paises li {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* === CARRUSEL SWIPER === */
+.swiper-container {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  padding: 10px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.swiper-pagination-bullet {
+  background: #007BFF !important;
+}
+.caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
