@@ -1,10 +1,11 @@
-/* styles.css */
+/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* TIPOGRAFÍA GENERAL */
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
@@ -12,6 +13,17 @@ body {
   color: #333;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTENEDOR PRINCIPAL */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -27,21 +39,25 @@ header {
   top: 0;
   z-index: 999;
 }
+
 .logo img {
   height: 40px;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
   float: right;
 }
+
 nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   transition: opacity 0.3s;
 }
+
 nav a:hover {
   opacity: 0.8;
 }
@@ -54,6 +70,7 @@ nav a:hover {
   position: relative;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -62,11 +79,13 @@ nav a:hover {
   height: 100%;
   background: linear-gradient(to bottom right, rgba(0, 123, 255, 0.8), rgba(0, 0, 0, 0.6));
 }
+
 .hero .container {
   position: relative;
   z-index: 1;
   text-align: center;
 }
+
 .btn {
   background: #fff;
   color: #007BFF;
@@ -77,6 +96,7 @@ nav a:hover {
   display: inline-block;
   transition: background 0.3s, color 0.3s;
 }
+
 .btn:hover {
   background: #007BFF;
   color: #fff;
@@ -86,9 +106,11 @@ nav a:hover {
 .seccion {
   padding: 60px 0;
 }
+
 .seccion.light {
   background: #fefefe;
 }
+
 .seccion h2 {
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -97,90 +119,70 @@ nav a:hover {
   color: #222;
 }
 
-/* FLEXBOX PARA SECCIÓN SOBRE NOSOTROS */
-.flex,
-.flexbox {
+/* BIOGRAFÍA CON FOTO AL COSTADO */
+.bio-content {
   display: flex;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
 }
-.texto {
-  flex: 2;
+
+.bio-image {
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
-.foto-jorge {
+
+.bio-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.bio-text {
   flex: 1;
 }
-.foto-jorge img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
-/* TARJETAS DE TALLERES (en index.html) */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-.card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  text-align: center;
-}
-.card h3 {
-  font-size: 1.2rem;
+/* HOMENAJES Y LISTADOS */
+.listado-homenajes li,
+.listado-paises li {
   margin-bottom: 10px;
-}
-.card p {
-  font-size: 0.95rem;
-  color: #555;
-}
-.btn-mini {
-  background: #007BFF;
-  color: #fff;
-  padding: 8px 12px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  display: inline-block;
-  transition: background 0.3s;
-}
-.btn-mini:hover {
-  background: #0056b3;
+  line-height: 1.6;
+  color: #444;
 }
 
-/* GALERÍA */
+.listado-paises {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 0;
+}
+
+.listado-paises li {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* GALERÍA DE IMÁGENES */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
 }
+
 .gallery img {
   width: 100%;
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .gallery img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* MAPA */
-.map-container {
-  margin-top: 20px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.map-container iframe {
-  width: 100%;
-  height: 450px;
-  border: none;
 }
 
 /* FOOTER */
@@ -190,6 +192,7 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+
 footer a {
   color: #fff;
   margin-left: 10px;
@@ -208,237 +211,17 @@ footer a {
   transition: transform 0.2s;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+
 .whatsapp-button:hover {
   transform: scale(1.1);
 }
+
 .whatsapp-button img {
   width: 50px;
   height: 50px;
 }
 
-/* === TALLERES DE TEATRO === */
-.seccion.talleres {
-  background-color: #fff;
-  padding: 60px 0;
-}
-
-.card-taller {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  background: #f9f9f9;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-.card-taller:hover {
-  transform: translateY(-5px);
-}
-
-.card-taller img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-.card-taller img:hover {
-  transform: scale(1.02);
-}
-
-.card-taller .info {
-  flex: 1;
-  min-width: 300px;
-}
-.card-taller h3 {
-  font-size: 1.6rem;
-  color: #007BFF;
-  margin-bottom: 10px;
-}
-.card-taller p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #444;
-}
-.card-taller:last-child {
-  margin-bottom: 0;
-}
-
-/* === MEJORAS ADICIONALES === */
-.card-taller:nth-child(even) {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-.card-taller:nth-child(even) .info {
-  text-align: right;
-}
-.card-taller:nth-child(even) h3 {
-  color: #4682B4;
-}
-
-/* === EVENTOS MENSUALES === */
-.eventos-lista {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.evento {
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.evento:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.evento-fecha {
-  font-weight: bold;
-  color: #007BFF;
-  font-size: 1rem;
-  margin-bottom: 5px;
-}
-.evento-titulo {
-  font-size: 1.2rem;
-  color: #222;
-  margin-bottom: 10px;
-  display: block;
-}
-.evento-titulo:hover {
-  text-decoration: underline;
-}
-.evento-descripcion {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* === BIOGRAFÍA CON FOTO AL COSTADO === */
-.bio-content {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.bio-image {
-  width: 100%;
-  max-width: 200px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-.bio-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.bio-text {
-  flex: 1;
-}
-
-/* === HOMENAJES Y PAÍSES === */
-.listado-homenajes {
-  padding-left: 20px;
-}
-.listado-homenajes li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  color: #444;
-}
-
-.listado-paises {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
-  padding: 0;
-}
-.listado-paises li {
-  background: #fff;
-  border-radius: 6px;
-  padding: 10px 15px;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-/* === CARRUSEL SWIPER === */
-.swiper-container {
-  max-width: 900px;
-  margin: auto;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-.swiper-slide {
-  text-align: center;
-  background: #fff;
-  padding: 10px;
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-.swiper-pagination-bullet {
-  background: #007BFF !important;
-}
-.caption {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 10px;
-  text-align: center;
-}
-/* styles.css */
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-header {
-  background-color: #f8f9fa;
-  padding: 1rem;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.hero {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 5rem 0;
-}
-
-.seccion {
-  padding: 3rem 0;
-}
-
-.bio-content {
-  display: flex;
-  gap: 2rem;
-}
-
-.bio-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.redes-sociales a img {
-  width: 32px;
-  margin: 0 10px;
-}
-/* Estilos para la sección "Más sobre Jorge Donn" */
+/* ESTILOS PARA LA SECCIÓN "Más sobre Jorge Donn" */
 #mas-sobre {
   padding: 4rem 0;
 }
@@ -481,4 +264,50 @@ header {
 
 .btn-recurso:hover {
   background-color: #0056b3;
+}
+
+/* EVENTOS MENSUALES */
+.evento {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.evento:hover {
+  transform: translateY(-5px);
+}
+
+.evento-fecha {
+  font-weight: bold;
+  color: #007BFF;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.evento-titulo {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.evento-descripcion {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* MAPA */
+.map-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
 }
